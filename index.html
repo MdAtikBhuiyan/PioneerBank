@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Bank Site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="login-Area">
+        <div class="container">
+            <h1 class="title">Welcome To Pioneer Bank</h1>
+
+            <div class="login-form submit-area">
+                <h3 class="mb-3">Login</h3>
+                <input type="email" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Password">
+                <br>
+                <button id="loginBtn" class=" btn btn-success">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="transaction-area">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="currentDeposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="currentWithdraw">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="currentBalance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submit-area me-3">
+                        <h3 class="mb-3">Deposit</h3>
+                        <input id="depositInput" type="text" class="form-control" placeholder="$ amount you want to deposit">
+                        <br>
+                        <button id="depositBtn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area ms-3">
+                        <h3 class="mb-3">Withdraw</h3>
+                        <input id="withdrawInput" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                        <br>
+                        <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
